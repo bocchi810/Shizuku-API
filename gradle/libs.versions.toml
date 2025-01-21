@@ -1,0 +1,27 @@
+[versions]
+annotation = "1.9.1"
+core = "1.15.0"
+cxx = "1.2.0"
+hidden-api = "4.3.3"
+hiddenapibypass = "4.3"
+parcelablelist = "2.0.1"
+refine = "4.4.0"
+android = "8.8.0"
+kotlin = "2.1.0"
+
+[libraries]
+annotation = { module = "androidx.annotation:annotation", version.ref = "annotation" }
+core = { module = "androidx.core:core", version.ref = "core" }
+cxx = { module = "dev.rikka.ndk.thirdparty:cxx", version.ref = "cxx" }
+hidden-compat = { module = "dev.rikka.hidden:compat", version.ref = "hidden-api" }
+hidden-stub = { module = "dev.rikka.hidden:stub", version.ref = "hidden-api" }
+
+hiddenapibypass = { module = "org.lsposed.hiddenapibypass:hiddenapibypass", version.ref = "hiddenapibypass" }
+parcelablelist = { module = "dev.rikka.rikkax.parcelablelist:parcelablelist", version.ref = "parcelablelist" }
+refine-runtime = { module = "dev.rikka.tools.refine:runtime", version.ref = "refine" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "android" }
+android-library = { id = "com.android.library", version.ref = "android" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+refine = { id = "dev.rikka.tools.refine", version.ref = "refine" }
